@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Speech Command</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./audio.css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./tf.min.js"></script>
+    <script src="./speech-commands.min.js"></script>
+  </head>
+  <body>
+        <main>
+            <div class="container mt-1">
+                <div class="row col-12 col-md-12 col-xl-12 align-top">
+                    <div class="col-md-3 col-6 form-control">
+                            <label class="form-switch">
+                            <input type="checkbox" id="audio-switch">
+                            <i></i> Microphone</label>      
+                    </div>
+  
+                </div> 
+
+                <div class="row mt-2">
+                    <div class="col-12">
+                            <div class="progress progress-bar progress-bar-striped progress-bar-animated col-md-10 col-sm-8 col-8 d-none">Loading Model</div>
+                            <div id="candidate-words">                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
